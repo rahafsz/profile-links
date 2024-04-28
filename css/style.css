@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-brey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --green: hsl(75, 94%, 57%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+    background-color: var(--off-black);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header,
+main,
+ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+
+.card__links {
+    width: 35%;
+    margin: 5% auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: var(--dark-brey);
+}
+
+.card__links header {
+    gap: 0.5rem;
+}
+
+.card__links header .avatar {
+    width: 40%;
+}
+
+.card__links header .avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+header h1,
+main ul.links__list li a,
+main p,
+footer .attribution {
+    color: var(--white);
+}
+
+header h3,
+footer .attribution a {
+    color: var(--green);
+}
+
+main p {
+    margin-top: 2rem;
+}
+
+main ul.links__list {
+    gap: 1rem;
+    margin: 1rem;
+}
+
+main ul.links__list li {
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: var(--grey);
+}
+
+main ul.links__list li a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    transition: .3s all ease;
+}
+
+main ul.links__list a:hover {
+    background-color: var(--green);
+    color: var(--grey);
+}
+
+footer .attribution a {
+    font-size: 0.8rem;
+}
+
+footer .attribution {
+    text-align: center;
+}
