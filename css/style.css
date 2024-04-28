@@ -40,7 +40,6 @@ ul {
     flex-direction: column;
 }
 
-
 .card__links {
     width: 35%;
     margin: 5% auto;
@@ -104,10 +103,24 @@ main ul.links__list a:hover {
     color: var(--grey);
 }
 
+footer .attribution,
 footer .attribution a {
     font-size: 0.8rem;
 }
 
 footer .attribution {
     text-align: center;
+}
+
+@media (width <=870px) {
+    div.card__links {
+        width: 45%;
+    }
+
+    .card__links header h1 {
+        font-size: 1.8rem;
+    }
+    .card__links header h3 {
+        font-size: 1.2rem;
+    }
 }
